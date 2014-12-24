@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      	android:orientation="horizontal" 
+      	android:layout_marginLeft="@dimen/entry_margin"
+      	android:layout_marginTop="@dimen/entry_margin">
+      	
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:text="@string/text_new_entry_title"/>
+             	
+        <EditText android:id="@+id/edit_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_new_entry_title_hint"
+        />
+        
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/entry_margin"
+        android:layout_marginTop="@dimen/entry_margin"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/text_new_entry_text" />
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_new_entry_text_hint" />
+    </LinearLayout>
+        
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="@dimen/camera_width"
+        android:layout_height="@dimen/camera_height"
+        android:layout_gravity="center">
+    </SurfaceView>
+        
+    <ImageView android:id="@+id/image"
+        android:layout_width="@dimen/preview_image_width"
+        android:layout_height="@dimen/preview_image_height"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/entry_margin"
+        >
+    </ImageView>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      	android:orientation="horizontal" 
+      	android:layout_marginLeft="@dimen/entry_margin"
+      	android:layout_marginTop="@dimen/entry_margin">
+      	
+        <Button android:id="@+id/snap_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/button_padding"
+            android:text="@string/snap_button_text"
+            android:onClick="myClickHandler"
+            android:clickable="false"
+            />
+        
+        <Button android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="1dp"
+            android:text="@string/save_button_text"
+            android:onClick="myClickHandler"
+            />
+        
+    </LinearLayout>
+        
+</LinearLayout>

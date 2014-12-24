@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Phlogging</string>
+    <string name="camera_file_name">PhlogPhoto.jpeg</string>
+    
+    <string name="text_entry_button">New Entry</string>
+    <string name="text_item_title_hint">No Title</string>
+    <string name="text_item_date_hint">No Date</string>
+    <string name="text_new_entry_title">Title:  </string>
+    <string name="text_new_entry_text">Text:  </string>
+    
+    <string name="dismiss_button_text">Dismiss</string>
+    <string name="delete_button_text">Delete</string>
+    
+    <string name="text_new_entry_title_hint">Enter Title for Entry</string>
+    <string name="text_new_entry_text_hint">Enter Text for Entry</string>
+    
+    <string name="snap_button_text">Snap!</string>
+    <string name="save_button_text">Save Entry</string>
+    
+    
+    
+    <dimen name="list_image_width">40dp</dimen>
+    <dimen name="list_image_height">40dp</dimen>
+    <dimen name="list_text_size">14sp</dimen>
+    <dimen name="view_margin_top">20dp</dimen>
+    <dimen name="entry_margin">10dp</dimen>
+    <dimen name="camera_width">320px</dimen>
+    <dimen name="camera_height">240px</dimen>
+    <dimen name="preview_image_width">160px</dimen>
+    <dimen name="preview_image_height">120px</dimen>
+    <dimen name="button_padding">1dp</dimen>
+    
+    <integer name="time_between_location_updates_ms">2000</integer>
+
+</resources>
